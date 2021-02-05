@@ -39,6 +39,6 @@ In this sample project, they are in the root of the "src" folder, but it can be 
 - The building process will create a javascript file and css file.
 - Webpack was used as a static module bundler.
 - A js file was created to declare all the html pages to be used, 
-they source folder and file name locations and its destination after building.
+their source folder and file name locations and their destination after building.
 - A plugin was made to find and replace all component's tag, 
 and for copying the html pages to the dist folder.
