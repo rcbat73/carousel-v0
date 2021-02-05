@@ -22,11 +22,11 @@ From the "dist" folder, it's possible to run the project locally, just open the 
 
 - It's used a component structure and a BEM naming convention, for folders and files.
 - Each component has its folder with 3 files, scss, html and js files. 
-That way it can be found in an easier way and be reused, shared, modified, 
-used with any other javascript library a framework in the future if it's decided.
+That way it can be found in an easier way and be reused, shared, modified, even 
+used with any other javascript library or framework in the future, if it's decided.
 - As a multi page application or project, several html pages can be created. 
-In the sample they are in the root of the "src" folder, but it can be placed inside a folder.
-- All components and pages html files can have tags with component's names. They can be nested or not,
+In this sample project, they are in the root of the "src" folder, but it can be placed inside a folder.
+- All components and html pages files can have tags with component's names. They can be nested or not,
   Ex:
   ```
     <carousel__slider></carousel__slider>
@@ -39,6 +39,6 @@ In the sample they are in the root of the "src" folder, but it can be placed ins
 - The building process will create a javascript file and css file.
 - Webpack was used as a static module bundler.
 - A js file was created to declare all the html pages to be used, 
-the folder and file name locations and its destination after building.
-- I made a plugin for component's tag location and replacement, 
+they source folder and file name locations and its destination after building.
+- A plugin was made to find and replace all component's tag, 
 and for copying the html pages to the dist folder.
