@@ -1,0 +1,21 @@
+.carousel {
+    &__slides-list, .row {
+        list-style-type: none;
+        transform: translateX(0);
+        transition: transform 0.4s ease;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__slide, .col-sm-3 {
+        flex: 1 0 100%;
+        width: 100%;
+        padding: 0;
+    }
+}
