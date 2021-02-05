@@ -28,10 +28,12 @@ used with any other javascript library a framework in the future if it's decided
 In the sample they are in the root of the "src" folder, but it can be placed inside a folder.
 - All components and pages html files can have tags with component's names. They can be nested or not,
   Ex:
-  ...<carousel__slider></carousel__slider>
-  ...<carousel__slider>
-  ...   <carousel__card></carousel__card>
-  ...</carousel__slider>.
+  ```
+    <carousel__slider></carousel__slider>
+    <carousel__slider>
+      <carousel__card></carousel__card>
+    </carousel__slider>.
+  ```
   
 - When building, all component's tags will be replaced by each component's html tags.
 - The building process will create a javascript file and css file.
