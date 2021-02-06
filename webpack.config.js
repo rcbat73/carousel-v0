@@ -4,16 +4,18 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ReplaceTagPlugin = require('./ReplaceTagPlugin.js');
+const { pages } = require('./template.config.js');
 
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js',
     },
     mode: 'development',
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        watchContentBase: true,
     },
     module: {
         rules: [
@@ -39,9 +41,7 @@ module.exports = {
                 test: /\.html$/i,
                 loader: 'html-loader',
                 options: {
-                    attributes: {
-                        root: path.resolve(__dirname, 'src'),
-                    },
+                    attributes: false,
                 },
             },
             {

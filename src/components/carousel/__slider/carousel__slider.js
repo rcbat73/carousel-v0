@@ -1,4 +1,5 @@
 import './carousel__slider.scss';
+import './carousel__slider.html';
 
 class CarouselSlider {
   constructor({root}) {

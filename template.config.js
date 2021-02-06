@@ -1,5 +1,4 @@
-exports.config = {
-    pages: [
+exports.pages = [
         {
             source: 'src/index.html',
             destination: 'dist/index.html',
@@ -12,5 +11,4 @@ exports.config = {
             source: 'src/contactus.html',
             destination: 'dist/contactus.html',
         },
-    ],
-};
+];

@@ -1,5 +1,6 @@
 import EventEmitter from 'eventemitter3';
 import './carousel__dots.scss';
+import './carousel__dots.html'
 
 class CarouselDots extends EventEmitter {
   constructor({root}) {

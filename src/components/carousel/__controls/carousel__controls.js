@@ -1,5 +1,6 @@
 import EventEmitter from 'eventemitter3';
 import './carousel__controls.scss';
+import './carousel__controls.html';
 
 class CarouselControls extends EventEmitter {
     constructor({root}) {

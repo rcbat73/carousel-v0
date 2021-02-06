@@ -1,4 +1,4 @@
-const { config: { pages } } = require('./template.config.js');
+const { pages } = require('./template.config.js');
 const path = require('path');
 const fs = require('fs');
 const { readdir } = fs.promises;
